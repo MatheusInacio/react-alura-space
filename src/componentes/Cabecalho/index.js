@@ -1,0 +1,22 @@
+import React, { Component } from "react";
+import logo from "./logo.png";
+import search from "./search.png";
+import styles from "./Cabecalho.module.scss";
+
+export default class Cabecalho extends Component {
+  render() {
+    return (
+      <header className={styles.cabecalho}>
+        <img src={logo} alt="Logo do Alura Space" />
+        <div className={styles.cabecalho__container}>
+          <input
+            className={styles.cabecalho__input}
+            type="text"
+            placeholder="O que você procura?"
+          />
+          <img src={search} alt="ícone de lupa" />
+        </div>
+      </header>
+    );
+  }
+}
