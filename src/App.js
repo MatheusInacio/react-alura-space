@@ -1,9 +1,12 @@
 import PaginaInicial from "./Paginas/PaginaInicial";
-import './styles/estilosGlobais.scss'
+import Menu from "./componentes/Menu";
+import "./styles/estilosGlobais.scss";
 
 function App() {
   return (
-    <PaginaInicial />
+    <>
+      <PaginaInicial />
+    </>
   );
 }
 
