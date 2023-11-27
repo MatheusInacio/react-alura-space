@@ -1,9 +1,12 @@
 import React, { Component } from "react";
-import Cabecalho from "../../componentes/Cabecalho";
 import styles from "./PaginaInicial.module.scss";
-import Banner from "../../componentes/Banner";
-import Menu from "../../componentes/Menu";
 
+import Cabecalho from "componentes/Cabecalho";
+import Banner from "componentes/Banner";
+import Menu from "componentes/Menu";
+import Rodape from "componentes/Rodape";
+import Galeria from "componentes/Galeria";
+import Populares from "componentes/Populares";
 
 export default class PaginaInicial extends Component {
   render() {
@@ -15,7 +18,12 @@ export default class PaginaInicial extends Component {
             <Menu />
             <Banner />
           </section>
+          <div className={styles.galeria}>
+            <Galeria />
+            <Populares />
+          </div>
         </main>
+        <Rodape />
       </>
     );
   }
